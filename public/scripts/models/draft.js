@@ -64,7 +64,18 @@ var app = app || {};
     }
   };
 
-$('.teams-tab').hide();
+for (var i = 0; i < app.config.teams; i++){
+  $('#blank').append($('<option>', {
+    id:   `team-${i + 1}`,
+    text: `Team ${i + 1}`
+  }))
+      // .on('click', function(event){
+      //   .show();
+      //   .hide().siblings()
+  console.log(i);
+};
+
+$('.draft-tab').hide();
   $('#draft-nav').on('click', function(event){
     $(`.${event.target.id}-tab`).show().siblings().not('#draft-nav').hide();
   });
