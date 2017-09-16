@@ -45,6 +45,7 @@ var app = app || {};
 
         let $teamList = $('.draft-tab');
         $teamList.remove();
+          $('#team-list div:not(.team-1)').hide();
         return;
       }
       // If human is drafting, no need to run AI logic.
