@@ -6,7 +6,7 @@ var app = app || {};
     app.config = {
         "playerData": [], // put API data here
         "selected": "",
-        "teams": 5,
+        "teams": 4,
         "position" : 1,
         "roster": [
             {"position":"WR", "value": 1},
