@@ -52,7 +52,7 @@ var app = app || {};
     $('#random-btn').click(function ( event ){
         event.preventDefault();
             var options = $('#userPos').children('option');
-            var random = Math.floor(options.length * (Math.random() % 1));
+            var random = Math.floor(app.config.teams * (Math.random() % 1));
             options.attr('selected', false).eq(random).attr('selected', true);
     });
 }
